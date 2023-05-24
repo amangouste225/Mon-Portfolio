@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'simplon_monobold';
+  src: url('simplonmono-bold-webfont.woff2') format('woff2'),
+    url('simplonmono-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'simplon_monomedium';
+  src: url('simplonmono-medium-webfont.woff2') format('woff2'),
+    url('simplonmono-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'simplon_monolight';
+  src: url('simplonmono-light-webfont.woff2') format('woff2'),
+    url('simplonmono-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'satoshibold';
+  src: url('satoshi-bold-webfont.woff2') format('woff2'),
+    url('satoshi-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'satoshiitalic';
+  src: url('satoshi-italic-webfont.woff2') format('woff2'),
+    url('satoshi-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'satoshilight';
+  src: url('satoshi-light-webfont.woff2') format('woff2'),
+    url('satoshi-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'satoshimedium';
+  src: url('satoshi-medium-webfont.woff2') format('woff2'),
+    url('satoshi-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'satoshiregular';
+  src: url('satoshi-regular-webfont.woff2') format('woff2'),
+    url('satoshi-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'simplon_monobold', sans-serif;
+  font-size: 1rem;
+}
+
+p {
+    font-family: 'satoshiregular', sans-serif;
+    font-size: 1.1rem ;
+    color: black;
+}
+.personnal-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.logo {
+  align-self: center;
+  align-items: start;
+  align-content: start;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+
+#landing-page {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: rgb(245, 245, 245);
+}
+
+.middle {
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+  height: 100px;
+}
+
+.nav__link--list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.flex__item {
+  width: 33%;
+}
+
+.nav__link {
+  margin: 0 4px;
+  padding: 0 5px;
+}
+
+.nav__link--ancre {
+  text-decoration: none;
+  font-size: 15px;
+  color: #242424;
+  font-weight: 700;
+}
+
+.menu {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fa-solid,
+.fas {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+/* HEADER */
+
+#header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__content{
+    max-width: 500px;
+}
