@@ -61,6 +61,11 @@
   font-style: normal;
 }
 
+b {
+  font-family: 'satoshibold';
+  text-decoration: underline;
+  line-height: 1.5;
+}
 * {
   margin: 0;
   padding: 0;
@@ -189,7 +194,7 @@ nav {
   font-weight: 200;
   padding: auto;
   color: #000000;
-  -webkit-animation: rotating 1000ms infinite linear alternate-reverse;
+  animation: rotating 1000ms infinite linear alternate-reverse;
 }
 
 .download {
@@ -201,7 +206,7 @@ nav {
   background-position: right bottom;
   transition: all 0.2s ease-out;
   color: rgb(0, 0, 0);
-  padding: 5px 20px;
+  padding: 1px 20px;
   border-radius: 30px;
   border: 1px solid #333;
 }
@@ -308,3 +313,6 @@ background-color: black;
   -webkit-filter: grayscale(1) invert(1);
   filter: grayscale(1) invert(1);
 }
+
+
+/* MES PROJETS */
