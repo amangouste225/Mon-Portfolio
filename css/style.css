@@ -242,10 +242,8 @@ nav {
 
 .menu__list--link {
   border-radius: 15px;
-  background-color: white;
   margin: 5px;
   border: 1px solid;
-
   background: linear-gradient(to right, black 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
@@ -286,11 +284,26 @@ nav {
 
 .dark-theme .title,
 .dark-theme .title,
-.dark-theme .p {
+.dark-theme p {
   color: white;
 }
 
 
 .dark-theme section{
 background-color: black;
+}
+
+.dark-theme .icon, .dark-theme p, .dark-theme .fa-solid, .dark-theme .name, .dark-theme .middle{
+    color: white
+}
+.dark-theme .menu__bottom{
+    background-color: white;
+}
+
+.dark-theme .menu__list--link  {
+    background: linear-gradient(to right, red 100%)
+}
+
+.dark-theme .personnal-logo{
+    filter: invert(1);
 }
