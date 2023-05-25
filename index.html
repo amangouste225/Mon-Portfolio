@@ -8,10 +8,11 @@
   <title>Amangoua Ange | Développeur Frontend</title>
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
 </head>
 
 <body>
-  <section class="landing-page">
+  <section id="landing-page">
     <nav>
       <figure class="flex__item logo">
         <a href="#index"> <img src="./img/AM.svg" alt="logo" class="personnal-logo" /></a>
@@ -19,7 +20,7 @@
       <div class="flex__item middle">je suis basé à Abidjan, <br />Côte d'Ivoire</div>
       <ul class="nav__link--list flex__item menu">
         <li class="nav__link" onclick="toggleContrast()">
-          <i class="fa-solid fa-circle-half-stroke"></i>
+          <i class="fas fa-toggle-off darkBtn"></i>
         </li>
       </ul>
     </nav>
@@ -37,9 +38,9 @@
     <div class="menu__bottom">
       <ul class="menu__list">
         <li class="menu__list--link"><a href="#landing-page" class="menu__link--anchor">Accueil</a></li>
-        <li class="menu__list--link"><a href="#" class="menu__link--anchor">Mes Projets</a></li>
-        <li class="menu__list--link"><a href="#" class="menu__link--anchor">Mes Stacks</a></li>
-        <li class="menu__list--link"><a href="#" class="menu__link--anchor">M'écrire</a></li>
+        <li class="menu__list--link"><a href="#projects" class="menu__link--anchor">Mes Projets</a></li>
+        <li class="menu__list--link"><a href="#stacks" class="menu__link--anchor">Mes Stacks</a></li>
+        <li class="menu__list--link"><a href="#contact" class="menu__link--anchor">M'écrire</a></li>
       </ul>
     </div>
   </section>
@@ -53,14 +54,14 @@
         <ul class="projects__list">
           <li class="project">
             <div class="project__wraper">
-              <img src="./img/mockup.png" alt="project 1">
+              <img src="./img/mockup.png" alt="project 1" class="project__img">
               <div class="project__wraper--background"></div>
               <div class="project__description">
                 <h3 class="project__description--title">
                   La refonte du site web de l'agence Aside Agency
                 </h3>
                 <h4 class="project__description--sub-title">
-                  Wordpress avec Elementor Pro & Unlimited Elements
+                  Wordpress avec Elementort  Pro & Unlimited Elements
                 </h4>
                 <p class="project__description--para">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo beatae, error recusandae voluptas
@@ -81,7 +82,61 @@
           </li>
           <li class="project">
             <div class="project__wraper">
-              <img src="./img/mockup.png" alt="project 1">
+              <img src="./img/mockup.png" alt="project 1" class="project__img">
+              <div class="project__wraper--background"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Réalisation du site de l'IUGB
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Wordpress avec Elementor Pro & Unlimited Elements
+                </h4>
+                <p class="project__description--para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo beatae, error recusandae voluptas
+                  cum consequuntur autem, suscipit reprehenderit deserunt explicabo magnam accusamus temporibus aut
+                  eveniet ab, debitis animi saepe.
+                </p>
+                <div class="project__description--links">
+                  <a href="#" class="description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wraper">
+              <img src="./img/mockup.png" alt="project 1" class="project__img">
+              <div class="project__wraper--background"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Les Appartements LAMBLINS
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Wordpress avec Elementor Pro & Unlimited Elements
+                </h4>
+                <p class="project__description--para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo beatae, error recusandae voluptas
+                  cum consequuntur autem, suscipit reprehenderit deserunt explicabo magnam accusamus temporibus aut
+                  eveniet ab, debitis animi saepe.
+                </p>
+                <div class="project__description--links">
+                  <a href="#" class="description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wraper">
+              <img src="./img/mockup.png" alt="project 1" class="project__img">
               <div class="project__wraper--background"></div>
               <div class="project__description">
                 <h3 class="project__description--title">
@@ -112,6 +167,11 @@
 
 
   </section>
+  <footer>
+    <div class="container">
+      
+    </div>
+  </footer>
   <script src="./js/scripts.js"></script>
 </body>
 

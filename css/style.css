@@ -101,7 +101,7 @@ a {
 
 /* NAVIGATION */
 
-.landing-page {
+#landing-page {
   width: 100%;
   position: relative;
   margin: 0 auto;
@@ -151,8 +151,8 @@ nav {
 }
 
 .fa-solid,
-.fas {
-  font-size: 1.5em;
+.fa-toggle-off {
+  font-size: 2em;
   cursor: pointer;
 }
 
@@ -161,17 +161,20 @@ nav {
 #header {
   width: 100%;
   max-width: 1200px;
-  margin: 0 10px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px;
 }
 
 .header__content {
   max-width: 500px;
   margin-bottom: 30px;
+  margin: 20px;
+}
+
+.my__name {
+  margin: 20px;
 }
 
 .name {
@@ -231,9 +234,10 @@ nav {
   transform: translate(-50%, -50%);
   bottom: 0;
   left: 50%;
-  background-color: red;
+  background-color: black;
   border-radius: 15px;
   display: block;
+  z-index: 99;
 }
 
 .menu__list {
@@ -314,8 +318,34 @@ section {
   -webkit-filter: grayscale(1) invert(1);
   filter: grayscale(1) invert(1);
 }
-.dark-theme b {
-  color: red;
+
+.dark-theme .menu__link--anchor {
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+}
+
+.dark-theme .menu__bottom {
+  border: 1px solid black;
+}
+
+.fas .fa-toggle-on {
+  color: white;
+  font-size: 2em;
+  object-fit: cover;
+}
+
+.dark-theme .fas {
+  color: white;
+}
+
+
+.fa-link,
+.fa-github {
+  font-size: 1.4em !important
+}
+.fas {
+  font-size: 2em;
 }
 
 /* SECTION PROJETS */
@@ -337,28 +367,45 @@ section {
   padding: 0 12px;
 }
 
-.project img {
+.project__img {
   width: 100%;
 }
 
 .projects__list {
-  display: flex;
-  column-gap: 75px;
+  display: grid;
+  gap: 75px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  padding: 0 12px;
 }
 
 .project__wraper {
   position: relative;
-  border-radius: 20px;
   box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.project__wraper:hover .project__description {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+.project__wraper:hover .project__img {
+  filter: blur(5px);
+  transform: scale(1.05);
+}
+
+.project__wraper:hover .project__wraper--background {
+  opacity: 0.8;
 }
 
 .project__description {
   position: absolute;
   top: 50%;
   left: 50px;
-  transform: translateY(-50%);
+  transform: translateY(0%);
   max-width: 550px;
   color: white;
+  opacity: 0;
+  transition: opacity 300ms, transform 450ms ease;
 }
 
 .project__wraper--background {
@@ -368,7 +415,7 @@ section {
   background-color: rgb(0, 0, 0);
   height: 100%;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0;
 }
 
 .project__description--title {
@@ -377,25 +424,28 @@ section {
 }
 
 .project__description--title {
-  font-size: 25px;
+  font-size: 20px;
 }
 .project__description--sub-title {
   margin-top: 16px;
-  font-family: 'satoshimedium', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
 }
 .description--link {
   color: white;
   font-size: 20px;
   margin-left: 26px;
- 
 }
 .project__description--para {
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 16px;
   font-family: 'satoshilight', sans-serif;
+  line-height: 1.5em;
 }
 
-.project__description--links{
+.project__description--links {
   margin-top: 16px;
+}
+
+.fa-github {
+  font-size: 30px;
 }
