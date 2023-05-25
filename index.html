@@ -21,7 +21,7 @@
     <div class="menu__bottom">
       <ul class="menu__list">
         <li class="menu__list--link active">
-          <a href="#landing-page" class="menu__link--anchor">Accueil</a>
+          <a href="index.html" class="menu__link--anchor">Accueil</a>
         </li>
         <li class="menu__list--link">
           <a href="#projects" class="menu__link--anchor">Mes Projets</a>
@@ -35,11 +35,16 @@
       </ul>
     </div>
     <section id="landing-page" data-scroll-section>
-      <nav data-scroll data-scroll-repeat data-scroll data-scroll-speed="-8" data-scroll-position="top" data-scroll-target="#header">
-        <figure
-          class="flex__item logo"
-        >
-          <a href="#index">
+      <nav
+        data-scroll
+        data-scroll-repeat
+        data-scroll
+        data-scroll-speed="-8"
+        data-scroll-position="top"
+        data-scroll-target="#header"
+      >
+        <figure class="flex__item logo">
+          <a href="index.html">
             <img src="./img/AM LOGO.svg" alt="logo" class="personnal-logo"
           /></a>
         </figure>
@@ -75,7 +80,6 @@
           </h1>
         </div>
       </header>
-     
     </section>
     <section id="projects" data-scroll-section>
       <div class="container">
@@ -217,19 +221,17 @@
         </div>
       </div>
     </section>
-    <footer>
+    <section id="stacks" data-scroll-section>
       <div class="container">
-        <div class="row">
-          <a href="" target="_blank"></a>
-        </div>
+        
       </div>
-    </footer>
+    </section>
     <script src="./js/locomotive.js"></script>
-    <script> 
-     const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true
-});
+    <script>
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+      })
     </script>
     <script src="./js/scripts.js"></script>
     <script
