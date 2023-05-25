@@ -80,7 +80,6 @@ body {
 p {
   font-family: 'satoshiregular', sans-serif;
   font-size: 1.1rem;
-  color: black;
 }
 .personnal-logo {
   width: 70px;
@@ -107,7 +106,6 @@ a {
   position: relative;
   margin: 0 auto;
   min-height: 100vh;
-  background-color: rgb(245, 245, 245);
 }
 
 .middle {
@@ -180,7 +178,7 @@ nav {
   font-size: 8vw;
   font-family: 'satoshilight', sans-serif;
   display: inline;
-  color: #333;
+  color: #000000;
   line-height: 1em;
   position: relative;
 }
@@ -282,9 +280,9 @@ nav {
 
 /* DARK MODE */
 
-.section {
-    background-color: white;
-    transform: all 300ms ease;
+section {
+  background-color: rgb(245, 245, 245);
+  transform: all 300ms ease;
 }
 
 .dark-theme .title,
@@ -293,26 +291,111 @@ nav {
   color: white;
 }
 
-
-.dark-theme section{
-background-color: black;
+.dark-theme section {
+  background-color: black;
 }
 
-.dark-theme .icon, .dark-theme p, .dark-theme .fa-solid, .dark-theme .name, .dark-theme .middle{
-    color: white
+.dark-theme .icon,
+.dark-theme p,
+.dark-theme .fa-solid,
+.dark-theme .name,
+.dark-theme .middle {
+  color: white;
 }
-.dark-theme .menu__bottom{
-    background-color: white;
+.dark-theme .menu__bottom {
+  background-color: white;
 }
 
-.dark-theme .menu__list--link  {
-    background: linear-gradient(to right, red 100%)
+.dark-theme .menu__list--link {
+  background: linear-gradient(to right, red 100%);
 }
 
-.dark-theme .personnal-logo{
+.dark-theme .personnal-logo {
   -webkit-filter: grayscale(1) invert(1);
   filter: grayscale(1) invert(1);
 }
+.dark-theme b {
+  color: red;
+}
 
+/* SECTION PROJETS */
 
-/* MES PROJETS */
+.container {
+  padding: 50px 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+
+.row {
+  width: 100%;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.project img {
+  width: 100%;
+}
+
+.projects__list {
+  display: flex;
+  column-gap: 75px;
+}
+
+.project__wraper {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
+}
+
+.project__description {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  max-width: 550px;
+  color: white;
+}
+
+.project__wraper--background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.project__description--title {
+  font-size: 25px;
+  line-height: 1;
+}
+
+.project__description--title {
+  font-size: 25px;
+}
+.project__description--sub-title {
+  margin-top: 16px;
+  font-family: 'satoshimedium', sans-serif;
+  font-size: 20px;
+}
+.description--link {
+  color: white;
+  font-size: 20px;
+  margin-left: 26px;
+ 
+}
+.project__description--para {
+  font-size: 20px;
+  margin-top: 16px;
+  font-family: 'satoshilight', sans-serif;
+}
+
+.project__description--links{
+  margin-top: 16px;
+}
