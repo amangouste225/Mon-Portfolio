@@ -224,7 +224,7 @@ nav {
 }
 
 .menu__bottom {
-  position: fixed;
+  position: fixed ;
   max-width: 500px;
   height: auto;
   transform: translate(-50%, -50%);
