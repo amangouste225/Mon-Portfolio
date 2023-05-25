@@ -19,12 +19,9 @@
 
   <body class="light" data-scroll-container>
     <section id="landing-page"  data-scroll-section>
-      <nav data-scroll-section>
+      <nav data-scroll data-scroll-repeat data-scroll data-scroll-speed="-8" data-scroll-position="top" data-scroll-target="#header">
         <figure
           class="flex__item logo"
-          data-scroll
-          data-scroll-direction="horizontal"
-          data-scroll-speed="-2"
         >
           <a href="#index">
             <img src="./img/AM LOGO.svg" alt="logo" class="personnal-logo"
@@ -54,7 +51,7 @@
             pour en savoir plus.
           </p>
         </div>
-        <div class="my__name">
+        <div class="my__name" data-scroll-section>
           <h1 class="name">
             AMANGOUA<span class="ico">✺</span>KACOU<br /><span class="ico"
               >❋</span
@@ -122,7 +119,7 @@
             <li class="project">
               <div class="project__wraper">
                 <img
-                  src="./img/mockup.png"
+                  src="./img/mockup2.png"
                   alt="project 1"
                   class="project__img"
                 />
@@ -154,7 +151,7 @@
             <li class="project">
               <div class="project__wraper">
                 <img
-                  src="./img/mockup.png"
+                  src="./img/mockup3.webp"
                   alt="project 1"
                   class="project__img"
                 />
@@ -226,14 +223,14 @@
         </div>
       </div>
     </footer>
-    <script>
-      const scroll = new LocomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
-      })
+    <script src="./js/locomotive.js"></script>
+    <script> 
+     const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
     </script>
     <script src="./js/scripts.js"></script>
-    <script src="./js/locomotive.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
