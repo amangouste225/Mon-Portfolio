@@ -1,185 +1,246 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amangoua Ange | Développeur Frontend</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/locomotive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amangoua Ange | Développeur Frontend</title>
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
-</head>
+  <body class="light" data-scroll-container>
+    <section id="landing-page"  data-scroll-section>
+      <nav data-scroll-section>
+        <figure
+          class="flex__item logo"
+          data-scroll
+          data-scroll-direction="horizontal"
+          data-scroll-speed="-2"
+        >
+          <a href="#index">
+            <img src="./img/AM LOGO.svg" alt="logo" class="personnal-logo"
+          /></a>
+        </figure>
+        <div class="flex__item middle">
+          je suis basé à Abidjan, <br />Côte d'Ivoire
+        </div>
+        <div class="nav__link--list flex__item menu">
+          <label class="toggle" for="toggle">
+            <input class="checkbox" type="checkbox" id="toggle" />
+            <ion-icon class="icon icon--light" name="sunny-outline"></ion-icon>
+            <ion-icon class="icon icon--dark" name="moon-outline"></ion-icon>
+            <span class="ball"></span>
+          </label>
+        </div>
+      </nav>
 
-<body class="light">
-  <section id="landing-page">
-    <nav>
-      <figure class="flex__item logo">
-        <a href="#index"> <img src="./img/AM LOGO.svg" alt="logo" class="personnal-logo" /></a>
-      </figure>
-      <div class="flex__item middle">je suis basé à Abidjan, <br />Côte d'Ivoire</div>
-      <div class="nav__link--list flex__item menu">
-        <label class="toggle" for="toggle">
-          <input class="checkbox" type="checkbox" id="toggle" />
-          <ion-icon class="icon icon--light" name="sunny-outline"></ion-icon>
-          <ion-icon class="icon icon--dark" name="moon-outline"></ion-icon>
-          <span class="ball"></span>
-        </label>
-      </div>
-    </nav>
-    <header id="header">
-      <div class="header__content">
-        <p class="about">Je suis <b>dév front-end</b> passionné par la création d'application web offrant une grande
-          expérience utilisateur. Vous pouvez <a href="Frontend CV.pdf" target="_blank" class="download">télecharger mon
-            CV</a> pour en savoir plus.</p>
-      </div>
-      <div class="my__name">
-        <h1 class="name">AMANGOUA<span class="ico">✺</span><span class="">KACOU <br> <span
-              class="ico">❋</span></span></span><span>ANGE-THIERRY</span></h1>
-      </div>
-    </header>
-    <div class="menu__bottom">
-      <ul class="menu__list">
-        <li class="menu__list--link"><a href="#landing-page" class="menu__link--anchor">Accueil</a></li>
-        <li class="menu__list--link"><a href="#projects" class="menu__link--anchor">Mes Projets</a></li>
-        <li class="menu__list--link"><a href="#stacks" class="menu__link--anchor">Mes Stacks</a></li>
-        <li class="menu__list--link"><a href="#contact" class="menu__link--anchor">M'écrire</a></li>
-      </ul>
-    </div>
-  </section>
-  <section id="projects">
-    <div class="container">
-      <div class="row">
-        <h1 class="title">
-          Voici quelqu'une de <span class="">mes dernières réalisations</span>
-        </h1>
-
-        <ul class="projects__list">
-          <li class="project">
-            <div class="project__wraper">
-              <img src="./img/mockup.png" alt="project 1" class="project__img">
-              <div class="project__wraper--background"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  La refonte du site web de l'agence Aside Agency
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Wordpress avec Elementort Pro & Unlimited Elements
-                </h4>
-                <p class="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo beatae, error recusandae voluptas
-                  cum consequuntur autem, suscipit reprehenderit deserunt explicabo magnam accusamus temporibus aut
-                  eveniet ab, debitis animi saepe.
-                </p>
-                <div class="project__description--links">
-                  <a href="#" class="description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="#" class="description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-
-            </div>
+      <header id="header">
+        <div class="header__content">
+          <p class="about" data-scroll data-scroll-speed="2">
+            Je suis <b>dév front-end</b> passionné par la création d'application
+            web offrant une grande expérience utilisateur. Vous pouvez
+            <a href="Frontend CV.pdf" target="_blank" class="download"
+              >télecharger mon CV</a
+            >
+            pour en savoir plus.
+          </p>
+        </div>
+        <div class="my__name">
+          <h1 class="name">
+            AMANGOUA<span class="ico">✺</span>KACOU<br /><span class="ico"
+              >❋</span
+            >ANGE-THIERRY
+          </h1>
+        </div>
+      </header>
+      <div class="menu__bottom">
+        <ul class="menu__list">
+          <li class="menu__list--link active">
+            <a href="#landing-page" class="menu__link--anchor">Accueil</a>
           </li>
-          <li class="project">
-            <div class="project__wraper">
-              <img src="./img/mockup.png" alt="project 1" class="project__img">
-              <div class="project__wraper--background"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Réalisation du site de l'IUGB
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Wordpress avec Elementor Pro & Unlimited Elements
-                </h4>
-                <p class="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo beatae, error recusandae voluptas
-                  cum consequuntur autem, suscipit reprehenderit deserunt explicabo magnam accusamus temporibus aut
-                  eveniet ab, debitis animi saepe.
-                </p>
-                <div class="project__description--links">
-                  <a href="#" class="description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="#" class="description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <li class="menu__list--link">
+            <a href="#projects" class="menu__link--anchor">Mes Projets</a>
           </li>
-          <li class="project">
-            <div class="project__wraper">
-              <img src="./img/mockup.png" alt="project 1" class="project__img">
-              <div class="project__wraper--background"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Les Appartements LAMBLINS
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Wordpress avec Elementor Pro & Unlimited Elements
-                </h4>
-                <p class="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo beatae, error recusandae voluptas
-                  cum consequuntur autem, suscipit reprehenderit deserunt explicabo magnam accusamus temporibus aut
-                  eveniet ab, debitis animi saepe.
-                </p>
-                <div class="project__description--links">
-                  <a href="#" class="description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="#" class="description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <li class="menu__list--link">
+            <a href="#stacks" class="menu__link--anchor">Mes Stacks</a>
           </li>
-          <li class="project">
-            <div class="project__wraper">
-              <img src="./img/mockup.png" alt="project 1" class="project__img">
-              <div class="project__wraper--background"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  La refonte du site web de l'agence Aside Agency
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Wordpress avec Elementor Pro & Unlimited Elements
-                </h4>
-                <p class="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo beatae, error recusandae voluptas
-                  cum consequuntur autem, suscipit reprehenderit deserunt explicabo magnam accusamus temporibus aut
-                  eveniet ab, debitis animi saepe.
-                </p>
-                <div class="project__description--links">
-                  <a href="#" class="description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="#" class="description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <li class="menu__list--link">
+            <a href="#contact" class="menu__link--anchor">M'écrire</a>
           </li>
         </ul>
       </div>
-    </div>
+    </section>
+    <section id="projects"  data-scroll-section>
+      <div class="container">
+        <div class="row">
+          <h1 class="title">
+            Voici quelqu'une de <span class="">mes dernières réalisations</span>
+          </h1>
 
-
-  </section>
-  <footer>
-    <div class="container">
-      <div class="row">
-
+          <ul class="projects__list">
+            <li class="project">
+              <div class="project__wraper">
+                <img
+                  src="./img/mockup.png"
+                  alt="project 1"
+                  class="project__img"
+                />
+                <div class="project__wraper--background"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    La refonte du site web de l'agence Aside Agency
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Wordpress avec Elementort Pro & Unlimited Elements
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                    nemo beatae, error recusandae voluptas cum consequuntur
+                    autem, suscipit reprehenderit deserunt explicabo magnam
+                    accusamus temporibus aut eveniet ab, debitis animi saepe.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wraper">
+                <img
+                  src="./img/mockup.png"
+                  alt="project 1"
+                  class="project__img"
+                />
+                <div class="project__wraper--background"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Réalisation du site de l'IUGB
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Wordpress avec Elementor Pro & Unlimited Elements
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                    nemo beatae, error recusandae voluptas cum consequuntur
+                    autem, suscipit reprehenderit deserunt explicabo magnam
+                    accusamus temporibus aut eveniet ab, debitis animi saepe.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wraper">
+                <img
+                  src="./img/mockup.png"
+                  alt="project 1"
+                  class="project__img"
+                />
+                <div class="project__wraper--background"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Les Appartements LAMBLINS
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Wordpress avec Elementor Pro & Unlimited Elements
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                    nemo beatae, error recusandae voluptas cum consequuntur
+                    autem, suscipit reprehenderit deserunt explicabo magnam
+                    accusamus temporibus aut eveniet ab, debitis animi saepe.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wraper">
+                <img
+                  src="./img/mockup.png"
+                  alt="project 1"
+                  class="project__img"
+                />
+                <div class="project__wraper--background"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    La refonte du site web de l'agence Aside Agency
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Wordpress avec Elementor Pro & Unlimited Elements
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                    nemo beatae, error recusandae voluptas cum consequuntur
+                    autem, suscipit reprehenderit deserunt explicabo magnam
+                    accusamus temporibus aut eveniet ab, debitis animi saepe.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </footer>
-  <script src="./js/scripts.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <a href="" target="_blank"></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+      })
+    </script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/locomotive.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

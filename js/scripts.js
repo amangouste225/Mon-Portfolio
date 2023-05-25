@@ -20,3 +20,4 @@ const toggle = document.querySelector('#toggle');
 toggle.addEventListener('change', () => {
   body.classList.toggle('dark');
 });
+
