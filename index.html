@@ -11,28 +11,31 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
 </head>
 
-<body>
+<body class="light">
   <section id="landing-page">
     <nav>
       <figure class="flex__item logo">
-        <a href="#index"> <img src="./img/AM.svg" alt="logo" class="personnal-logo" /></a>
+        <a href="#index"> <img src="./img/AM LOGO.svg" alt="logo" class="personnal-logo" /></a>
       </figure>
       <div class="flex__item middle">je suis basé à Abidjan, <br />Côte d'Ivoire</div>
-      <ul class="nav__link--list flex__item menu">
-        <li class="nav__link" onclick="toggleContrast()">
-          <i class="fas fa-toggle-off darkBtn"></i>
-        </li>
-      </ul>
+      <div class="nav__link--list flex__item menu">
+        <label class="toggle" for="toggle">
+          <input class="checkbox" type="checkbox" id="toggle" />
+          <ion-icon class="icon icon--light" name="sunny-outline"></ion-icon>
+          <ion-icon class="icon icon--dark" name="moon-outline"></ion-icon>
+          <span class="ball"></span>
+        </label>
+      </div>
     </nav>
     <header id="header">
       <div class="header__content">
-        <p class="about">Je suis <b>dév front-end</b> passionné par la création d'applications Web offrant une grande
+        <p class="about">Je suis <b>dév front-end</b> passionné par la création d'application web offrant une grande
           expérience utilisateur. Vous pouvez <a href="Frontend CV.pdf" target="_blank" class="download">télecharger mon
-            CV</a> pour savoir plus sur moi</p>
+            CV</a> pour en savoir plus.</p>
       </div>
       <div class="my__name">
-        <h1 class="name">AMANGOUA<span class="icon">✺</span><span class="">KACOU <br> <span
-              class="icon">❋</span></span></span><span>ANGE-THIERRY</span></h1>
+        <h1 class="name">AMANGOUA<span class="ico">✺</span><span class="">KACOU <br> <span
+              class="ico">❋</span></span></span><span>ANGE-THIERRY</span></h1>
       </div>
     </header>
     <div class="menu__bottom">
@@ -61,7 +64,7 @@
                   La refonte du site web de l'agence Aside Agency
                 </h3>
                 <h4 class="project__description--sub-title">
-                  Wordpress avec Elementort  Pro & Unlimited Elements
+                  Wordpress avec Elementort Pro & Unlimited Elements
                 </h4>
                 <p class="project__description--para">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo beatae, error recusandae voluptas
@@ -169,10 +172,14 @@
   </section>
   <footer>
     <div class="container">
-      
+      <div class="row">
+
+      </div>
     </div>
   </footer>
   <script src="./js/scripts.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
